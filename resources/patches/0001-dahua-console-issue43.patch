@@ -1,0 +1,13 @@
+diff --git a/Console.py b/Console.py
+index 7e7e4e4..05e74a5 100755
+--- a/Console.py
++++ b/Console.py
+@@ -220,7 +220,7 @@ class DebugConsole(Servers):
+         while True:
+             try:
+                 self.prompt()
+-                msg = sys.stdin.readline().strip().decode('ascii')
++                msg = sys.stdin.readline()
+                 if not self.dh or not self.dh.remote.connected():
+                     log.failure('No available instance')
+                     return False
